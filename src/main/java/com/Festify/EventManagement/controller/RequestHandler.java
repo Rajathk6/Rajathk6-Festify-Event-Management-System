@@ -65,9 +65,15 @@ public class RequestHandler {
         model.addAttribute("venue", venue);
         return "VenueDetails";
     }
-    @GetMapping("/hosting")
-    public String hosting() {
-        return "hosting";
+
+    @GetMapping("/eventhosting")
+    public String Eventhosting() {
+        return "eventhosting";
+    }
+
+    @GetMapping("/venuehosting")
+    public String Venuehosting() {
+        return "venuehosting";
     }
 
     @GetMapping("/signin")
