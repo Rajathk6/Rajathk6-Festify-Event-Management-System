@@ -15,6 +15,7 @@ Festify is a full-stack event management web application built using Spring Boot
 ✅ Payments (Upcoming) – Integrate payment gateway for ticket purchases.
 
 🛠️ Tech Stack
+
 Backend: Spring Boot, Thymeleaf, MySQL, Spring Data JPA
 
 Frontend: HTML, CSS, JavaScript
