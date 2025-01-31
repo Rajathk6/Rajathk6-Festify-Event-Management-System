@@ -1,8 +1,8 @@
-🎉 Festify – Event Management System
+# 🎉 Festify – Event Management System
 
 Festify is a full-stack event management web application built using Spring Boot, Thymeleaf, and MySQL for the backend and HTML, CSS, and JavaScript for the frontend. The platform allows users to browse, book, and manage event tickets seamlessly.
 
-🚀 Features
+### 🚀 **Features**
 
 ✅ Event Listings – View and explore upcoming events with detailed descriptions.
 
@@ -14,7 +14,7 @@ Festify is a full-stack event management web application built using Spring Boot
 
 ✅ Payments (Upcoming) – Integrate payment gateway for ticket purchases.
 
-🛠️ Tech Stack
+### 🛠️ **Tech Stack**
 
 Backend: Spring Boot, Thymeleaf, MySQL, Spring Data JPA
 
