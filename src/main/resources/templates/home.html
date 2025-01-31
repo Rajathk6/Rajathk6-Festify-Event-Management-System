@@ -26,7 +26,19 @@
         <!-- nav-contents -->
         <a href="./events">Upcoming Events</a>
         <a href="./venue">Venue Reservations</a>
-        <a href="./hosting">Become a Host</a>
+
+        <div id="hoverOptions">
+          <a id="host">Become a Host</a>
+          <div id="hosting-arrowdown">
+            <img src="../images/downarroww-removebg-preview.png" alt="">
+          </div>
+          <div class="dropdown-options">
+            <a href="./eventhosting">Host your Event</a>
+            <a href="./venuehosting">Host your Venue</a>
+          </div>
+        </div>
+        
+        
       </div>
       <div class="navBar-getStarted">
         <!-- sign up/log in -->
@@ -107,8 +119,9 @@
           </li>
           <li><span>Direct Inquiries</span><span class="spacing"></span></li>
         </ul>
-        <a href="./hosting"><button>Become a Host</button></a>
+        <a href="./eventhosting"><button>Become a Host</button></a>
       </div>
     </div>
+    <!-- <script th:src="@{../js/home.js}" defer></script> -->
   </body>
 </html>
