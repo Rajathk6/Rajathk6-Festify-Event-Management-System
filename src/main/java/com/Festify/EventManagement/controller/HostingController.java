@@ -6,10 +6,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.Festify.EventManagement.model.EventHostDatabase;
+import com.Festify.EventManagement.model.VenueHostDatabase;
 import com.Festify.EventManagement.service.HostingService;
 
 @Controller
-@RequestMapping("/eventhosting")
+@RequestMapping("/submit")
 public class HostingController {
     HostingService EventHostService;
     HostingService VenueHostService;
@@ -19,9 +20,15 @@ public class HostingController {
         this.VenueHostService = VenueHostService;
     }
 
-    @PostMapping("/submit")
+    @PostMapping("/eventhosting")
     public String getEvent(@ModelAttribute EventHostDatabase hostdata) {
         EventHostService.addEventdetails(hostdata);
         return "redirect:/eventhosting";
+    }
+
+    @PostMapping("/venuehosting")
+    public String getvenue(@ModelAttribute VenueHostDatabase hostvenue) {
+        VenueHostService.addVenuedetails(hostvenue);
+        return "redirect:/venuehosting";
     }
 }
