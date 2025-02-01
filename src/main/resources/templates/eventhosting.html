@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>festify.com</title>
-    <link rel="stylesheet" href="../css/host.css" />
+    <link rel="stylesheet" href="../css/eventhosting.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
@@ -33,16 +33,16 @@
       </div>
     </div>
 
-    <!-- CACHE PARAGRAPH -->
+    <!-- CACHE PARAGRAPH
     <div class="main-catch">
       <div class="catchy-line">
-        <!-- Catchy Line -->
-        <h1>
+          Catchy Line -->
+        <!-- <h1>
             Host unforgettable <span class="mainPhrase">events?</span> <br> Start  
           <span class="mainPhrase">here⬇️ </span>
         </h1>
       </div>
-    </div>
+    </div>  -->
 
             <!-- FORM FOR HOSTING -->
 
@@ -51,30 +51,32 @@
             <h2>Fill the below form to get your events live</h2>
             <hr>
         
-        <form action="">
-            <label for="name">Full Name</label>
-            <input type="text" placeholder="Enter your name" id="name" required>
-
-            <label for="Email">Email</label>
-            <input type="text" placeholder="Enter your Mail id" id="mail" required>
-
-            <label for="phone">Phone</label>
-            <input type="text" placeholder="Enter your Phone Number" id="phone" required>
-
-            <label for="event">Event Type</label>
-            <select name="event" id="event" required>
+            <form action="/eventhosting/submit" method="post">
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter your name" id="name" name="fullName" required>
+          
+              <label for="mail">Email</label>
+              <input type="email" placeholder="Enter your Mail id" id="mail" name="email" required>
+          
+              <label for="phone">Phone</label>
+              <input type="tel" placeholder="Enter your Phone Number" id="phone" name="phone" required>
+          
+              <label for="event">Event Category</label>
+              <select name="eventCategory" id="event" required>
+                  <option value="">Select an event</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Music">Music</option>
+                  <option value="Art">Art</option>
+                  <option value="Food">Food</option>
+                  <option value="Sports">Sports</option>
+              </select>
+          
+              <label for="detailsvenue">Venue Details</label>
+              <textarea name="venueDetail" id="detailsvenue" rows="4" required></textarea>
               
-            <option value="">Select a event</option>
-            <option value="Wedding">Wedding</option>
-            <option value="Conference">Conference</option>
-            <option value="party">Party</option>
-            <option value="corporate">Corporate Event</option>
-        </select>
-
-            <label for="Venue-Details">Venue Details</label>
-            <textarea name="venueDetail" id="detailsvenue" rows="4" required></textarea>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+              <button type="submit" class="submit-btn">Submit</button>
+          </form>
+          
     </div>
     </div>
 
