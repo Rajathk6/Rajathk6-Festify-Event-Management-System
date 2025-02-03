@@ -23,8 +23,4 @@ public class VenueService {
     public List<VenueDataBase> getVenueById(Long id) {
         return VenueRepo.findById(id).map(Collections::singletonList).orElseGet(Collections::emptyList);
     }
-
-   
-
-
 }

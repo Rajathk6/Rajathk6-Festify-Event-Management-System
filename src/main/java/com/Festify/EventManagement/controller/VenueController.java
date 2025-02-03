@@ -13,7 +13,6 @@ import com.Festify.EventManagement.service.VenueService;
 @RequestMapping("/venueapi")
 public class VenueController {
     
-
     VenueService service;
     public VenueController(VenueService service) {
         this.service = service;

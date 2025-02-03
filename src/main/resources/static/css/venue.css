@@ -35,7 +35,6 @@ body  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 15px; */
     background: linear-gradient(360deg, #000000, #272626);
     position: fixed; 
     top: 0; 
@@ -96,7 +95,7 @@ body  {
     display: flex;
     margin-top: 5px;
     padding-bottom: 5px;
-    position: relative; /* Important to position dropdown correctly */
+    position: relative;
 }
 
 #hosting-arrowdown img {
@@ -109,7 +108,7 @@ body  {
 .dropdown-options {
     display: none;
     position: absolute;
-    top: 100%; /* Place it right below the parent */
+    top: 100%;
     left: 0;
     background-color: #000000;
     min-width: 200px;
@@ -215,37 +214,6 @@ body  {
     margin-top: -10%;
 }
 
-/* .sub-filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.additionalFilters {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 8px;
-    background: linear-gradient(170deg, #8a2be2, #4b0082);
-    box-shadow: blueviolet;
-    color: rgb(255, 255, 255);
-    width: 10%;
-    border-radius: 8px;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-#eventid {
-    width: 25%;
-    margin-left: 7em;
-} */
-
-/* hr {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 13%;
-    margin-top: -12%;
-} */
-
-                /* EVENT CARD  */
-
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -313,4 +281,3 @@ body  {
 .btn-secondary {
     background-color: gray;
 }
-

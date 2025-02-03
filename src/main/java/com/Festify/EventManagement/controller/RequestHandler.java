@@ -44,14 +44,6 @@ public class RequestHandler {
         return "eventDetails";
     }
 
-    // WORK IN PROGRESS
-    // @PatchMapping("/events") 
-    // public String updateTicket(@RequestParam Long id, @RequestParam int newQuantity) {
-    //     Eventservice.getupdatedticket(id, newQuantity);
-    //     return "redirect:/events";
-    // }
-
-
     @GetMapping("/venue")
     public String getVenue(Model model) {
         List<VenueDataBase> Venue = Venueservice.GetVenue();
@@ -85,5 +77,4 @@ public class RequestHandler {
     public String signup() {
         return "signup";
     }
-
 }

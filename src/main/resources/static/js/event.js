@@ -37,8 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
             rotate.classList.toggle("rotates")
         }
     }
-
-    // venue heading by place name
 });
 
 

@@ -73,14 +73,4 @@ public class EventDataBase {
     @JoinColumn(name = "Event_Category_Id", nullable = false)
     @JsonManagedReference
     private EventCategory eventCategory;
-
-    // public void updateTicketQuantity() {
-    //     if (this.ticketQuantity == 0) {
-    //         this.status = EventStatus.Sold_Out;
-    //     } else {
-    //         this.status = EventStatus.Available;
-    //     }
-    // }
-   
-    
 }
