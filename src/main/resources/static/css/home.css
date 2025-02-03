@@ -6,27 +6,6 @@ body  {
     color: white;
 }
 
-                /* MEDIA QUERY */
-/* MOBILE */
-
-@media (max-width:768px) {
-    
-}
-
-@media (min-width:769px) and (max-width: 900px) {
-    .navBar-contents{
-        margin-left: -5px
-    }
-}
-
-@media (min-width:1025px) {
-
-}
-
-/* TABLET */
-
-/* DESKTOP */
-
                 /* NAVIGATION BAR  */
 
 .main-navBar{
@@ -108,7 +87,7 @@ body  {
     position: absolute;
     top: 100%; /* Place it right below the parent */
     left: 0;
-    
+    background-color: #000000;
     min-width: 200px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     border-radius: 4px;
@@ -178,7 +157,7 @@ body  {
 .card-containers{
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 15px;
-    height:63vh;
+    /* height:63vh; */
     width: 70vh;
     margin: 1.5rem;
     background-color:#6e1bbc;

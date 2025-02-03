@@ -18,16 +18,10 @@ public class EventController {
     public EventController(EventService service) {
         this.service = service;
     }
+
     // DISPLAYS THE EVENTS PRESENT IN THE EVENT DATABASE
     @GetMapping("/data")
     public List<EventDataBase> getName() {
         return service.trashData();
-    }
-    
-    // ADDS THE EVENTS FROM THE CLIENT SIDE TO THE EVENT DATABASE
-    @PostMapping(value = "/data", consumes = "application/json")
-    public void addEventToDataBase(@RequestBody EventDataBase newEvent) {
-        System.out.println(newEvent);
-        service.addEvent(newEvent);
     }
 }

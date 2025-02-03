@@ -1,7 +1,5 @@
 package com.Festify.EventManagement.service;
 
-
-
 import org.springframework.stereotype.Service;
 
 import com.Festify.EventManagement.model.EventHostDatabase;

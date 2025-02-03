@@ -59,12 +59,21 @@
                     <span th:text="${venue.price}"></span>
                     
                 </p>
-                <a href="Booking"><button> Book Venue </button></a>
+                <a><button id="booking"> Book Ticket </button></a>
                 
             </div>
-            
+              <h1 id="inconvinence"></h1>
         </div>
     </div>
+
+    <script>
+      var bookticket = document.getElementById("booking");
+      var message = document.getElementById("inconvinence");
+
+      bookticket.addEventListener("click", function() {
+        message.innerHTML = `This feature is not available!`
+      })
+    </script>
     
     
 </body>

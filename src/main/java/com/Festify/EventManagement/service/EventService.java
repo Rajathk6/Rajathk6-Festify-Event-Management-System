@@ -32,16 +32,4 @@ public class EventService {
     public List<EventDataBase> getEventById(Long eventId) {
         return EventRepo.findById(eventId).map(Collections::singletonList) .orElseGet(Collections::emptyList);
     }
-
-    // public void getupdatedticket(Long id, int newQuantity) {
-    //     Optional<EventDataBase> optionalEvent = EventRepo.findById(id);
-    //     if (optionalEvent.isPresent()) {
-    //         EventDataBase event = optionalEvent.get();
-    //         event.setTicketQuantity(newQuantity);
-    //         event.updateTicketQuantity();
-    //         EventRepo.save(event);
-    //     }
-    // }
-
-    
 }
